@@ -12,32 +12,32 @@
 #   class { 'motd': }
 #   motd::register{"Apache": }
 class motd {
-   include concat::setup
-   $motd = "/etc/motd.tail"
+  include concat::setup
+  $motd = "/etc/motd.tail"
 
-   concat{$motd:
-      owner => root,
-      group => root,
-      mode  => 755
-   }
+  concat{$motd:
+    owner => root,
+    group => root,
+    mode  => 755
+  }
 
-   concat::fragment{"motd_header":
-      target => $motd,
-      content => "\nPuppet modules on this server:\n\n",
-      order   => 01,
-   }
+  concat::fragment{"motd_header":
+    target  => $motd,
+    content => "\nPuppet modules on this server:\n\n",
+    order   => 01,
+  }
 }
 
 # used by other modules to register themselves in the motd
 define motd::register($content="", $order=10) {
-   if $content == "" {
-      $body = $name
-   } else {
-      $body = $content
-   }
+  if $content == "" {
+    $body = $name
+  } else {
+    $body = $content
+  }
 
-   concat::fragment{"motd_fragment_$name":
-      target  => "/etc/motd.tail",
-      content => "    -- $body\n"
-   }
+  concat::fragment{"motd_fragment_$name":
+    target  => "/etc/motd.tail",
+    content => "    -- $body\n"
+  }
 }
