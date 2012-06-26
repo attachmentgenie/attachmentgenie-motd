@@ -1,4 +1,4 @@
-define register($content='', $order=10) {
+define motd::register($content='', $order=10) {
   if $content == '' {
     $body = $name
   } else {
