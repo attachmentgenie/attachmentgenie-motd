@@ -1,11 +1,13 @@
-name    'bram-attachmentgenie-motd'
-version ''
-source ''
-author 'bram'
-license ''
-summary ''
-description ''
-project_page ''
+name 'attachmentgenie-motd'
+version '1.0.0'
 
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
+author 'Bram Vogelaar'
+license 'Apache License 2.0'
+project_page 'https://github.com/attachmentgenie/attachmentgenie-motd'
+source 'git://github.com/attachmentgenie/attachmentgenie-motd.git'
+summary 'Puppet motd Module'
+description 'Module for configuring motd
+
+Ubuntu 12.04 LTS with Puppet 2.7.'
+dependency 'puppetlabs/stdlib', '>=2.2.1'
+dependency 'ripienaar/concat', '>=0.1.0'

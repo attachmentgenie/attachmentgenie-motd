@@ -1,15 +1,16 @@
 {
-  "name": "bram-attachmentgenie-motd",
-  "author": "bram",
-  "description": "",
-  "license": "",
-  "project_page": "",
-  "source": "",
-  "summary": "",
-  "version": "",
+  "name": "attachmentgenie-motd",
+  "author": "Bram Vogelaar",
+  "description": "Module for configuring motd\n\nUbuntu 12.04 LTS with Puppet 2.7.",
+  "license": "Apache License 2.0",
+  "project_page": "https://github.com/attachmentgenie/attachmentgenie-motd",
+  "source": "git://github.com/attachmentgenie/attachmentgenie-motd.git",
+  "summary": "Puppet motd Module",
+  "version": "1.0.0",
   "checksums": {
     "Gemfile": "0a275f1d64df25282170d15201432745",
-    "Modulefile": "a3cf34ba4d1df9a8895baa616c360eef",
+    "LICENSE": "41398b0ee4a91804be908d41e627d0da",
+    "Modulefile": "d38a58acfff66a12274044aa125cb069",
     "README.md": "0860df8803ad6200c95363fb2028e5a7",
     "Rakefile": "9b80b157fe8bf8ee3975c7dec8524204",
     "manifests\\init.pp": "302393ef5f2d951ef27ec11aba231fe1",
@@ -17,5 +18,14 @@
     "spec\\spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "tests\\init.pp": "c7683542f12c6ced4fcf8311fde4a9b0"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": "\u003e\u003d2.2.1"
+    },
+    {
+      "name": "ripienaar/concat",
+      "version_requirement": "\u003e\u003d0.1.0"
+    }
+  ]
 }
