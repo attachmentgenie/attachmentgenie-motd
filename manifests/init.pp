@@ -22,9 +22,15 @@ class motd {
     mode  => 755
   }
 
+  concat::fragment{"motd_puppet_header":
+    target  => $motd,
+    content => "\nPuppet environment: $environment\n",
+    order   => 01,
+  }
+
   concat::fragment{'motd_header':
     target  => $motd,
     content => '\nPuppet modules on this server:\n\n',
-    order   => 01,
+    order   => 02,
   }
 }
