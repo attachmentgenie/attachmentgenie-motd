@@ -17,7 +17,8 @@
     "manifests\\register.pp": "b41b61c49f7c1abf76a34220165552ce",
     "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec\\spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
-    "tests\\init.pp": "c7683542f12c6ced4fcf8311fde4a9b0"
+    "tests\\init.pp": "c7683542f12c6ced4fcf8311fde4a9b0",
+    "tests\\register.pp": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "dependencies": [
     {
