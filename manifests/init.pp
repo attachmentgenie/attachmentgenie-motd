@@ -30,7 +30,7 @@ class motd {
 
   concat::fragment{'motd_header':
     target  => $motd,
-    content => '\nPuppet modules on this server:\n\n',
+    content => "\nPuppet modules on this server:\n\n",
     order   => 02,
   }
 }
