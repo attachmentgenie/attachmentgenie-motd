@@ -1,24 +1,24 @@
 {
-  "name": "attachmentgenie-motd",
+  "name": "puppet-motd",
   "author": "Bram Vogelaar",
   "description": "Module for configuring motd. Currently we just used the ripienaar/concat example.\n\nUbuntu 12.04 LTS with Puppet 2.7.",
   "license": "Apache License 2.0",
-  "project_page": "https://github.com/attachmentgenie/attachmentgenie-motd",
-  "source": "git://github.com/attachmentgenie/attachmentgenie-motd.git",
+  "project_page": "https://github.com/attachmentgenie/puppet-motd",
+  "source": "git://github.com/attachmentgenie/puppet-motd.git",
   "summary": "Puppet motd Module",
   "version": "1.0.0",
   "checksums": {
-    "Gemfile": "0a275f1d64df25282170d15201432745",
-    "LICENSE": "41398b0ee4a91804be908d41e627d0da",
-    "Modulefile": "58e5df66dc0e867d1b545ec1561e19e1",
-    "README.md": "0860df8803ad6200c95363fb2028e5a7",
-    "Rakefile": "9b80b157fe8bf8ee3975c7dec8524204",
-    "manifests\\init.pp": "3cc6d6a2be60a1f8321a78c4aa29eaf4",
-    "manifests\\register.pp": "b41b61c49f7c1abf76a34220165552ce",
-    "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
-    "spec\\spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
-    "tests\\init.pp": "c7683542f12c6ced4fcf8311fde4a9b0",
-    "tests\\register.pp": "d41d8cd98f00b204e9800998ecf8427e"
+    "Gemfile": "7a90ba90918a5972eb038190feaf7fb4",
+    "LICENSE": "b75d5f19bdd65b7b6b5925fac8517e3c",
+    "Modulefile": "d8cf2e83e91ea3cd163de483b0a77416",
+    "README.md": "d0a83fbd0e6574f059a06b6fed2fb58d",
+    "Rakefile": "30135290361360248d8139853a15c8a2",
+    "manifests/init.pp": "b3fe85949d1e724d5e0cef3fa258654e",
+    "manifests/register.pp": "6d20adcd96eb45f5b7360900e44d7d03",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "tests/init.pp": "5086992bfbe4109aef08a6dc91736250",
+    "tests/register.pp": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "dependencies": [
     {

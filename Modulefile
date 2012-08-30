@@ -1,10 +1,10 @@
-name 'attachmentgenie-motd'
+name 'puppet-motd'
 version '1.0.0'
 
 author 'Bram Vogelaar'
 license 'Apache License 2.0'
-project_page 'https://github.com/attachmentgenie/attachmentgenie-motd'
-source 'git://github.com/attachmentgenie/attachmentgenie-motd.git'
+project_page 'https://github.com/attachmentgenie/puppet-motd'
+source 'git://github.com/attachmentgenie/puppet-motd.git'
 summary 'Puppet motd Module'
 description 'Module for configuring motd. Currently we just used the ripienaar/concat example.
 

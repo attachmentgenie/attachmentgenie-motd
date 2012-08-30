@@ -1,1 +1,1 @@
-include attachmentgenie-motd
+include motd

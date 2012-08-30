@@ -1,6 +1,6 @@
-# Class: attachmentgenie-motd
+# Class: puppet-motd
 #
-# This module manages attachmentgenie-motd.
+# This module manages puppet-motd.
 # Currently this is only the module version of the ripienaar/concat example.
 #
 # Parameters:
