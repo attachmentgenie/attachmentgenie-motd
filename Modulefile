@@ -1,5 +1,5 @@
-name 'puppet-motd'
-version '1.0.0'
+name 'attachmentgenie-motd'
+version '1.0.1'
 
 author 'Bram Vogelaar'
 license 'Apache License 2.0'

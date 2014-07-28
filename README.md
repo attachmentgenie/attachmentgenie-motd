@@ -1,5 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/attachmentgenie/puppet-motd.png)](http://travis-ci.org/attachmentgenie/puppet-motd)
 
-puppet-motd
+attachmentgenie-motd
 
-This is the puppet-motd module.
+This is the attachmentgenie-motd module.
