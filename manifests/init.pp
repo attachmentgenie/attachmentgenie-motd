@@ -12,24 +12,25 @@
 # Sample Usage:
 #   class { 'motd': }
 #   motd::register{'Apache': }
-class motd {
-  include concat::setup
-  $motd = '/etc/motd.tail'
+class motd (
+  $motd_file = $motd::params::motd_file,
+) inherits ::motd::params {
 
-  concat{$motd:
-    owner => root,
-    group => root,
-    mode  => 755
+  concat{$motd_file:
+    ensure => present,
+    owner  => root,
+    group  => root,
+    mode   => 755
   }
 
   concat::fragment{"motd_puppet_header":
-    target  => $motd,
+    target  => $motd_file,
     content => "\nPuppet environment: $environment\n",
     order   => 01,
   }
 
   concat::fragment{'motd_header':
-    target  => $motd,
+    target  => $motd_file,
     content => "\nPuppet modules on this server:\n\n",
     order   => 02,
   }

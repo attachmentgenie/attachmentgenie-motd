@@ -1,4 +1,10 @@
-define motd::register($content='', $order=10) {
+define motd::register(
+  $content= '',
+  $order  = 10,
+  $target = $motd::params::motd_file,
+) {
+  include motd::params
+
   if $content == '' {
     $body = $name
   } else {
@@ -6,7 +12,7 @@ define motd::register($content='', $order=10) {
   }
 
   concat::fragment{"motd_fragment_$name":
-    target  => '/etc/motd.tail',
+    target  => $target,
     content => "    -- $body\n",
   }
 }
