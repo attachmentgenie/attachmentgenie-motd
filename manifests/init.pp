@@ -23,9 +23,9 @@ class motd (
     mode   => 755
   }
 
-  concat::fragment{"motd_puppet_header":
+  concat::fragment{'motd_puppet_header':
     target  => $motd_file,
-    content => "\nPuppet environment: $environment\n",
+    content => "\nPuppet environment: ${::environment}\n",
     order   => 01,
   }
 

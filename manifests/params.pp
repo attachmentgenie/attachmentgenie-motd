@@ -1,9 +1,9 @@
 class motd::params() {
-    case $::osfamily {
+  case $::osfamily {
     'debian': {
-       case $::lsbdistcodename {
+      case $::lsbdistcodename {
         'precise', 'trusty': {
-           $motd_file = '/etc/motd.tail'
+          $motd_file = '/etc/motd.tail'
         }
         default: {
           $motd_file = '/etc/motd'
