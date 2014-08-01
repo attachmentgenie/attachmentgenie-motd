@@ -1,0 +1,15 @@
+{
+  "name": "attachmentgenie-motd",
+  "version": "1.1.0",
+  "author": "Bram Vogelaar",
+  "summary": "Puppet motd Module",
+  "license": "Apache License 2.0",
+  "source": "git://github.com/attachmentgenie/puppet-motd.git",
+  "project_page": "https://github.com/attachmentgenie/puppet-motd",
+  "issues_url": "https://github.com/attachmentgenie/puppet-motd/issues",
+  "description": "Module for configuring motd. Currently we just used the puppetlabs/concat example.",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">=2.2.1"},
+    {"name":"puppetlabs-concat","version_requirement":">=1.0.0"}
+  ]
+}
