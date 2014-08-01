@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/attachmentgenie/puppet-motd.png)](http://travis-ci.org/attachmentgenie/puppet-motd)
+[![Build Status](https://secure.travis-ci.org/attachmentgenie/attachmentgenie-motd.png)](http://travis-ci.org/attachmentgenie/attachmentgenie-motd)
 
 attachmentgenie-motd
 
