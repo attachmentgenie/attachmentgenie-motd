@@ -1,6 +1,6 @@
 define motd::register(
   $content= '',
-  $order  = 10,
+  $order  = '10',
   $target = $motd::params::motd_file,
 ) {
   include motd::params
@@ -13,6 +13,6 @@ define motd::register(
 
   concat::fragment{"motd_fragment_${name}":
     target  => $target,
-    content => "    -- ${body}\n",
+    content => "    -- ${body}",
   }
 }

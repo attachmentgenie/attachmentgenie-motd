@@ -17,21 +17,28 @@ class motd (
 ) inherits ::motd::params {
 
   concat{$motd_file:
-    ensure => present,
-    owner  => root,
-    group  => root,
-    mode   => 755
+    ensure         => present,
+    ensure_newline => true,
+    owner          => root,
+    group          => root,
+    mode           => 755
+  }
+
+  concat::fragment{'motd_os_header':
+    target  => $motd_file,
+    content => template('motd/os.erb'),
+    order   => '01',
   }
 
   concat::fragment{'motd_puppet_header':
     target  => $motd_file,
-    content => "\nPuppet environment: ${::environment}\n",
-    order   => 01,
+    content => "Puppet environment: ${::environment}",
+    order   => '02',
   }
 
-  concat::fragment{'motd_header':
+  concat::fragment{'motd_modules_header':
     target  => $motd_file,
-    content => "\nPuppet modules on this server:\n\n",
-    order   => 02,
+    content => 'Puppet modules on this server:',
+    order   => '03',
   }
 }
