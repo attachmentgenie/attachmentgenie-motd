@@ -21,7 +21,7 @@ class motd (
     ensure_newline => true,
     owner          => root,
     group          => root,
-    mode           => 755
+    mode           => '0755',
   }
 
   concat::fragment{'motd_os_header':
